@@ -7,7 +7,7 @@
 * 试除法是一个很好的办法。这个算法的大致意思是让小于 n 的数都和 n 相除，如果余数为零可以判断为合数。
 * 有了大致思路还不行，还可以优化。合数都是成对出现的，对吧。我们用 n 除以 i，余数为零，那么商也是另一个约数。
 
-```
+```cpp
 #include<iostream>
 #include<algorithm>
 #include<vector>
@@ -48,7 +48,7 @@ int main(){
 
 任何一个 $$N$$ 可以分解为 $$p_1^{a_1} * p_2^{a_2} * \cdots * p_n^{a_n}$$，而任何一个 $$N$$ 的合数都可以表示为$$p_1^{b_1} * p_2^{b_2} * \cdots * p_n^{b_n}$$，其中 $$0 <= b_i <= a_i$$。那么 $$N$$ 的合数的个数不就是一个组合数 $$\prod_{i=1}^{n}(1+a_i)$$,我们按照算术基本定理计算就可。
 
-```
+```cpp
 #include<iostream>
 #include<algorithm>
 #include<unordered_map>
@@ -89,7 +89,7 @@ int main(){
 
 由算术基本定理可得，一个正整数可以分解为 $$N = p_1^{a_1} * p_2^{a_2} * \cdots * p_n^{a_n}$$，而任何一个 $$N$$ 的合数都可以表示为 $$p_1^{b_1} * p_2^{b_2} * \cdots * p_n^{b_n}$$，其中 $$0 <= b_i <= a_i$$。那么约数之和可以表示为 $$(p_1^1 + p_1^2 + \cdots + p_1^{a_1}) * \cdots * (p_n^1 + p_n^2 + \cdots + p_n^{a_n})$$，可以简洁的表示为 $$\prod_{i = 1}^n {\sum_{j = 1}^{a_i} p_i^j}$$
 
-```
+```cpp
 #include<iostream>
 #include<algorithm>
 #include<unordered_map>
@@ -136,7 +136,7 @@ int main(){
 
 最大公约数就比较简单了，小学都学过，辗转相除法计算，就不多说了。
 
-```
+```cpp
 #include<iostream>
 #include<algorithm>
 using namespace std;

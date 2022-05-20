@@ -30,7 +30,7 @@ $$
 x = y^{'},y = x^{'} - \lfloor a / b \rfloor * y^{'}
 $$
 
-```
+```cpp
 #include<iostream>
 #include<algorithm>
 using namespace std;
@@ -77,7 +77,7 @@ $$
 
 由之前的贝祖等式可知，只要 $$gcd(a,m)|b$$，我们就可以利用扩展欧几里得算法求解线性同余方程。
 
-```
+```cpp
 #include<iostream>
 #include<algorithm>
 

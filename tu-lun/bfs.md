@@ -10,7 +10,7 @@ BFS 也是经典板子了。BFS 自带最短路性质，可以用来求某些需
 
 > 5 5 0 1 0 0 0 0 1 0 1 0 0 0 0 0 0 0 1 1 1 0 0 0 0 1 0
 
-```
+```cpp
 #include<iostream>
 #include<queue>
 #include<cstring>
@@ -51,7 +51,7 @@ int main(){
 
 经典问题，拼图问题。重点是在对公共变量修改后要返回状态。
 
-```
+```cpp
 #include <iostream>
 #include <cstring>
 #include <algorithm>

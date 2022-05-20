@@ -22,7 +22,7 @@ $$
 
 分析这个函数，求出 $$N$$ 所有质数即可求出它的欧拉函数。
 
-```
+```cpp
 #include<iostream>
 #include<algorithm>
 #include<vector>
@@ -71,7 +71,7 @@ $$
 \phi(p[j] * i) = p[j] * i * {q_1 - 1\over q_1} * \cdots * {q_n - 1\over q_n}
 $$
 
-```
+```cpp
 #include<iostream>
 #include<algorithm>
 using namespace std;

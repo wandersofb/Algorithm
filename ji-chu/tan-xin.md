@@ -19,7 +19,7 @@
 
 这可以完美覆盖所有区间，并且找到最少的选取点数。
 
-```
+```cpp
 #include<iostream>
 #include<algorithm>
 using namespace std;
@@ -71,7 +71,7 @@ int main(){
 
 观察分析过程，我们维护的组其实是一个堆，我们只取其中的最值，并且在算法过程中堆要不断的调整自己的最值。
 
-```
+```cpp
 #include<iostream>
 #include<algorithm>
 #include<queue>
@@ -115,7 +115,7 @@ int main(){
 * 排序。以右端点从小到大排序。
 * 选取。考虑覆盖左端点的区间们，我们一定是选取右端点最大的那个区间，这样收益最大。
 
-```
+```cpp
 #include<iostream>
 #include<algorithm>
 using namespace std;

@@ -4,7 +4,7 @@
 
 * 将区间划分为 `[l, r]` 划分为 `[l, mid]` 和 `[mid + 1, r]` 时（下取整 mid `l + r >> 1`）。
 
-```
+```cpp
 int bsearch_1(int l, int r)
 {
     while (l < r)
@@ -19,7 +19,7 @@ int bsearch_1(int l, int r)
 
 * 将区间划分为 `[l, r]` 划分为 `[l, mid - 1]` 和 `[mid, r]` 时（上取整 mid `l + r + 1 >> 1`）。
 
-```
+```cpp
 int bsearch_2(int l, int r)
 {
     while (l < r)

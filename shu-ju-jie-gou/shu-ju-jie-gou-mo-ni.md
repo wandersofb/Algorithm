@@ -8,7 +8,7 @@
 
 单链表可以用 `forward_list`，但没必要，单链表能实现的东西双链表都可以，不需要对链表内部指针修改都可以用双链表。
 
-```
+```cpp
 #include<iostream>
 #include<algorithm>
 using namespace std;

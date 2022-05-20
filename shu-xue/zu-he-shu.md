@@ -10,7 +10,7 @@
 
 * 当 $$1\le n \le 10000, 1 \le b\le a \le 2000$$ 时，用递归公式预处理。
 
-```
+```cpp
 #include<iostream>
 #include<algorithm>
 
@@ -45,7 +45,7 @@ $$
 
 ，其中逆元用快速幂可求。
 
-```
+```cpp
 #include<iostream>
 #include<algorithm>
 using namespace std;
@@ -85,7 +85,7 @@ $$
 C_n^k = {n! \over k!(n-k)!} = {n*(n-1)*(n-2)*\cdots * (n-k+1) \over k!}
 $$
 
-```
+```cpp
 #include<iostream>
 #include<algorithm>
 using namespace std;
@@ -142,7 +142,7 @@ $$
 
 这个最好在纸上画一遍。举个例子，假如求 $$6! = 1*2*3*4*5*6$$ 中 $$2$$ 的次数，大致意思是，除以 $$2^1$$，可以对 $$2,4,6$$ 都去除一次 $$2$$，则幂为 $$3$$，除以 $$2^2$$，可以对 $$4$$ 去除一次 $$2^2$$，则幂为 $$1$$，相加为 $$4$$。
 
-```
+```cpp
 #include<iostream>
 #include<algorithm>
 #include<vector>
@@ -223,7 +223,7 @@ $$
 
 ![](../.gitbook/assets/13653\_c0dae9e295-2020032210584895.png)
 
-```
+```cpp
 #include<iostream>
 #include<algorithm>
 typedef long long LL;

@@ -6,7 +6,7 @@
 
 按照竖式加法来计算。
 
-```
+```cpp
 #include<iostream>
 #include<algorithm>
 #include<vector>
@@ -45,7 +45,7 @@ int main(){
 
 按照竖式减法计算。减法有几个 tricky 点，当减法的时候，我们要比较大小，用大的减小的，还有减法会令结果出现前导零，需要排除。
 
-```
+```cpp
 #include<iostream>
 #include<vector>
 using namespace std;
@@ -100,7 +100,7 @@ $$
 1≤A的长度≤100000, 0≤B≤10000
 $$
 
-```
+```cpp
 #include<iostream>
 #include<algorithm>
 using namespace std;
@@ -137,7 +137,7 @@ $$
 1≤A的长度≤100000, 1≤B≤10000, B 一定不为 0
 $$
 
-```
+```cpp
 #include<iostream>
 #include<algorithm>
 #include<vector>

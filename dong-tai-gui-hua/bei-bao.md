@@ -30,7 +30,7 @@ $$
 
 二维代码：
 
-```
+```cpp
 #include<iostream>
 #include<algorithm>
 using namespace std;
@@ -53,7 +53,7 @@ int main(){
 
 其实还可以进行降维优化，由于更新第 $$i$$ 层时只用了第 $$i-1$$ 并且更新每个 $$j$$ 时用到的数据都是之前的数据，可以利用滚动数组来优化。
 
-```
+```cpp
 // input
 // 4 5
 // 1 2
@@ -109,7 +109,7 @@ $$
 f(i, j) = max(f(i-1,j), f(i, j-v_i) + w_i)
 $$
 
-```
+```cpp
 #include<iostream>
 #include<algorithm>
 using namespace std;
@@ -134,7 +134,7 @@ int main(){
 
 和 0-1 背包问题很相似，也可以优化为一维。
 
-```
+```cpp
 #include<iostream>
 #include<algorithm>
 using namespace std;
@@ -167,7 +167,7 @@ $$
 f(i,j) = max(f(i-1,j), f(i - 1, j - k * v_i) + k * w_i)
 $$
 
-```
+```cpp
 #include<iostream>
 #include<algorithm>
 using namespace std;
@@ -199,7 +199,7 @@ $$
 
 通过这样打包，我们可以使用这些包装过的物品能够凑出选取 $$0 \sim N$$ 的所有数量的物品，而且使用每个包装的数量为 $$0$$ 或者 $$1$$，完美满足 0-1 背包的性质。这样就可以转化为 0-1 背包的问题。
 
-```
+```cpp
 #include<iostream>
 #include<algorithm>
 using namespace std;
@@ -249,7 +249,7 @@ $$
 f(i,j) = max(f(i-1,j),f(i-1,j - v[i,k]) + w[i,k])
 $$
 
-```
+```cpp
 #include<iostream>
 #include<algorithm>
 using namespace std;

@@ -10,7 +10,7 @@
 * [贪心](ji-chu/tan-xin.md)
 * [KMP](ji-chu/kmp.md)
 * [Master Theorem](ji-chu/master-theorem.md)
-* [前缀和  & 差分](ji-chu/qian-zhui-he-cha-fen.md)
+* [前缀和 & 差分](ji-chu/qian-zhui-he-cha-fen.md)
 * [sort](ji-chu/sort.md)
 * [双指](ji-chu/shuang-zhi.md)
 
@@ -32,6 +32,7 @@
 ## 动态规划
 
 * [背包](dong-tai-gui-hua/bei-bao.md)
+* [Page 1](dong-tai-gui-hua/page-1.md)
 
 ## 图论
 

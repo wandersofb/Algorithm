@@ -29,7 +29,7 @@ $$
 \begin{bmatrix} a_{11} & a_{12} & \cdots & a_{1n} & b_1\\ & a_{22} & \cdots & a_{2n} & b_2\\ & & & \vdots & \vdots\\ & & & a_{nn} & b_n \end{bmatrix}
 $$
 
-```
+```cpp
 #include<iostream>
 #include<algorithm>
 #include<cmath>

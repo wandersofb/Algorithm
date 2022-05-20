@@ -38,7 +38,7 @@ $$
 
 分析题意是求所有的集合交集的基数，可利用容斥原理。
 
-```
+```cpp
 #include<iostream>
 #include<algorithm>
 using namespace std;

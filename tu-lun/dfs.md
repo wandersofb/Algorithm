@@ -8,7 +8,7 @@
 
 经典问题，求 $$n$$ 的全排列，按照字典序输出。
 
-```
+```cpp
 #include<iostream>
 #include<algorithm>
 #include<vector>
@@ -52,7 +52,7 @@ int main(){
 
 八皇后也是经典问题。关键是搞懂条件判断如何写就很好办了。
 
-```
+```cpp
 #include<iostream>
 #include<algorithm>
 #include<vector>
