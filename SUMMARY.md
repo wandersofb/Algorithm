@@ -32,7 +32,7 @@
 ## 动态规划
 
 * [背包](dong-tai-gui-hua/bei-bao.md)
-* [Page 1](dong-tai-gui-hua/page-1.md)
+* [字符串匹配](dong-tai-gui-hua/zi-fu-chuan-pi-pei.md)
 
 ## 图论
 
