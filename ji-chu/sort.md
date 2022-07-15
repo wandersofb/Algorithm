@@ -82,4 +82,51 @@ int main(){
 }
 ```
 
+**基数**
 
+基数排序的思想是一位一位的排，先排最后一位，再以此往前。时间复杂度 $$O(n * k)$$。
+
+图源[此处](https://leetcode.cn/problems/maximum-gap/solution/c-ji-shu-pai-xu-guan-fang-dai-ma-zhu-shi-by-lljj54/)
+
+![](../.gitbook/assets/radix_sort.gif)
+
+```cpp
+    void radixSort(vector<int> &nums) {
+        int n = nums.size();
+        // 复制数组
+        vector<int> buf(n);
+        // 基数
+        int radix = 1;
+        // 最大值
+        int u = *max_element(nums.begin(), nums.end());
+        int k = maxBit(u);
+        while (k --) {
+            vector<int> bucket(10);
+            // 找到每个桶放多少个值
+            for (int i = 0; i < n; i ++) {
+                int k = (nums[i] / radix) % 10;
+                bucket[k] ++;
+            }
+            // 索引
+            for (int i = 1; i < 10; i ++) {
+                bucket[i] += bucket[i - 1];
+            }
+            // 防值
+            for (int i = n - 1; i >= 0; i --) {
+                int k = (nums[i] / radix) % 10;
+                buf[bucket[k] - 1] = nums[i];
+                bucket[k] --;
+            }
+            copy(buf.begin(), buf.end(), nums.begin());
+            radix *= 10;
+        }
+    } 
+    int maxBit(int a) {
+        int n = 0;
+        while(a) {
+            n ++;
+            a /= 10;
+        } 
+        return n;
+    }
+```
