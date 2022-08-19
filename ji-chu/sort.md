@@ -88,7 +88,7 @@ int main(){
 
 图源[此处](https://leetcode.cn/problems/maximum-gap/solution/c-ji-shu-pai-xu-guan-fang-dai-ma-zhu-shi-by-lljj54/)
 
-![](../.gitbook/assets/radix_sort.gif)
+![](../.gitbook/assets/radix\_sort.gif)
 
 ```cpp
     void radixSort(vector<int> &nums) {
